@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"version": "2.1",
+	"name": "VK audio download",
+	"developer": {
+		"name": "Anton Todua",
+		"url": "https://vk.com/id13476570"
+	},
+	"description": "The simple extension allows you to add download buttons on vk.com/audio* page",
+	"icons": {
+		"16": "images/icons/icon_16.png",
+		"19": "images/icons/icon_19.png",
+		"48": "images/icons/icon_48.png",
+		"128": "images/icons/icon_128.png"
+	},
+	"browser_action": {
+		"default_icon": "images/icons/icon_19.png",
+		"default_title": "Add Download Buttons"
+	},
+	"permissions": [
+		"tabs",
+		"http://vk.com/audio*",
+		"https://vk.com/audio*"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"web_accessible_resources": [
+		"images/save_button.png"
+	]
+}
